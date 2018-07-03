@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 29, 2018, 3:52:46 AM
+    Author     : edgardmacpro
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Tahoma',sans-serif;
+    color: #666;
+    font-size: 16px;
+    background: #f9f9f9;
+    line-height: 1.6em;
+}
+
+ul,li{
+    list-style: none;
+}
+
+#container{
+    width: 60%;
+    margin: 30px auto;
+    overflow: auto;
+}
+
+h1
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title{
+    height: 40px;
+    background: #6bb170;
+    color:#fff;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.faq li{
+    /*style apply to the question and answer*/
+    padding: 20px;
+    
+}
+
+.faq li.q{
+    /*style apply to the question only*/
+    
+    background-color:#eee;
+    font-weight: bold;
+    font-size: 120%;
+    border-bottom: 1px #ddd solid;
+    cursor: pointer;
+}
+
+.faq li.a{
+    background: #ccc;
+    display: none;
+}
+
+.rotate{
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+/* responsive design to make sure when the sceen is 800 px or less the width is 90%*/
+@media(max-width:800px){
+    #container{
+        width:90%;
+    }
+    
+}
